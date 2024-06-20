@@ -1,0 +1,10 @@
+while True
+    response = input(Do you want to buy a car (yn) )
+    if response == 'y'
+        budget = float(input(What is your budget ))
+        vehicles = buy_vehicle(vehicles, budget)
+    elif response == 'n'
+        save_vehicles_to_file(vehicles, 'vehicles.json')
+        break
+    else
+        print(Invalid response. Please answer with 'y' or 'n'.)
